@@ -38,7 +38,7 @@ while True:
         folder=values['-folder-']
         bit_rate=values['-bitrate-']
         
-        flag=beforeSubmit(url,folder,bit_rate)
+        flag=beforeSubmit(url,folder,bit_rate,"")
         if(flag):
             download(url,folder)
         else:
