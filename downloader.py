@@ -23,7 +23,7 @@ class Downloader:
     def download_audio(self):
         print("Started ...")
         youtube_obj = YouTube(self.youtube_url)
-        youtube_obj.register_on_complete_callback(self.complete_func)
+        #youtube_obj.register_on_complete_callback(self.complete_func)
         self.file_name=str(youtube_obj.title).rsplit(' ')[0]
         
         youtube_obj.streams \

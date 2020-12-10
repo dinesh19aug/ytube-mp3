@@ -12,7 +12,7 @@ class AudioProcessor:
         input = ffmpeg.input(self.file_Path+'/'+self.file_name+'.mp4')
         audio = input.audio
         #out = ffmpeg.output(audio, 'out.mp3', **{'f':'mp3', 'ab':'320k'})
-        path = self.file_Path+'\\'+self.file_name+'.mp3'
+        path = self.file_Path+'/'+self.file_name+'.mp3'
         out = ffmpeg.output(audio, path, **{'f':'mp3', 'ab':self.bit_rate})
         ffmpeg.run(out)
         print("Audio converted ...")
